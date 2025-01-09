@@ -53,6 +53,10 @@
     transform: scale(1.1);
 }
 
+.reset[disabled] {
+    pointer-events: none;
+}
+
 .start:hover {
     transform: scale(1.1);
 }

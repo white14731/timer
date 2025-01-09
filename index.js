@@ -40,6 +40,7 @@ function startTimer() {
     if(!timer) {
         timer = true;
         interval = setInterval(updateTime, 10)
+        btnReset.disabled = false
     }
 }
 
@@ -60,6 +61,7 @@ function resetTimer() {
     minutes.textContent = '00'
     hours.textContent = '00'
     btnStart.textContent = 'Старт'
+    btnReset.disabled = true
 }
 
 btnStart.addEventListener('click', startTimer)
